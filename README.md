@@ -16,15 +16,15 @@
 ├─services web聊天界面, 主要使用flask框架调用接口
    - qa_service.py
    
-   ├─static 前端文件
+       ├─static 前端文件
    
-   │  ├─css
+       │  ├─css
    
-   │  ├─images
+       │  ├─images
    
-   │  └─js
+       │  └─js
    
-   └─templates
+       └─templates
    
       - index.html
          
