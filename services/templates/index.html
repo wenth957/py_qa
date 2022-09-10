@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <!-- 以下是聊天机器人本体 -->
+        <div class="chatbox__support"> 
+        <!-- 以下是聊天机器人header，标题部分 -->
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">电影聊天机器人</h4>
+                    <p class="chatbox__description--header">你好，我是小神，请问有什么需要帮忙的吗?</p>
+                </div>
+            </div>
+            <!-- 以下是聊天内容 -->
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <!-- 以下是输入框 -->
+            <div class="chatbox__footer">
+                <input type="text" placeholder="输入电影的相关问题...">
+                <button class="chatbox__send--footer send__button">发送</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+<!-- 实验表明，这句代码没用 -->
+    <!-- <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
